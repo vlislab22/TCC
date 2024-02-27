@@ -48,14 +48,6 @@
                     </li>
 
                     <li>
-			<img src="./image/tianbo.jpg" height="80px"><br>
-                        Tianbo Pan
-                      </a>
-                      <br /> AI Thrust, HKUST(GZ)
-                      <br /> &nbsp &nbsp
-                    </li>
-
-                    <li>
 			    <img src="./image/yunhao.jpg" height="80px"><br>
                         <a href="https://devinluo27.github.io/" >
                            Yunhao Luo
@@ -64,7 +56,27 @@
                       <br /> &nbsp &nbsp
 
                     </li>
-                  
+			
+                    <li>
+			    <img src=".jpg" height="80px"><br>
+                        <a href="" >
+                           Chong Fu
+                        </a>
+                        <br /> Northeastern University
+                      <br /> &nbsp &nbsp
+
+                    </li>
+			
+		    <li>
+			    <img src="" height="80px"><br>
+                        <a href="">
+                           Kangcheng Liu
+                        </a>
+                        <br /> SMMG/ROAS Thrust, HKUST(GZ) 
+		
+                    </li>
+
+			
                     <li>
 			    <img src="./image/linwang.jpg" height="80px"><br>
                         <a href="https://addisonwang2013.github.io/vlislab/linwang.html">
@@ -134,8 +146,8 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-	                    Endeavors have been recently made to transfer knowledge from the labeled pinhole image domain to the unlabeled panoramic image domain via Unsupervised Domain Adaptation (UDA). The aim is to tackle the domain gaps caused by the style disparities and distortion problem from the non-uniformly distributed pixels of equirectangular projection (ERP). Previous works typically focus on transferring knowledge based on geometric priors with specially designed multi-branch network architectures. As a result, considerable computational costs are induced, and meanwhile, their generalization abilities are profoundly hindered by the variation of distortion among pixels. In this paper, we find that the pixels' neighborhood regions of the ERP indeed introduce less distortion. Intuitively, we propose a novel UDA framework that can effectively address the distortion problems for panoramic semantic segmentation. In comparison, our method is simpler, easier to implement, and more computationally efficient.Specifically, we propose distortion-aware attention (DA) capturing the neighboring pixel distribution without using any geometric constraints. Moreover, we propose a class-wise feature aggregation (CFA) module to iteratively update the feature representations with a memory bank. As such, the feature similarity between two domains can be consistently optimized. Extensive experiments show that our method achieves new state-of-the-art performance while remarkably reducing 80% parameters.
-                    <br>
+	                The popular methods for semi-supervised semantic segmentation mostly adopt a unitary network model using convolutional neural networks (CNNs) and enforce consistency of the model’s predictions over perturbations applied to the inputs or model. However, such a learning paradigm suffers from two critical limitations:  a) learning the discriminative features for the unlabeled data; b) learning both global and local information from the whole image. In this paper, we propose a novel Semi-supervised Learning (SSL) approach, called Transformer-CNN Cohort (\textbf{TCC}), that consists of two students with one based on the vision transformer (ViT) and the other based on the CNN. Our method subtly incorporates the multi-level consistency regularization on the predictions and the heterogeneous feature spaces via pseudo-labeling for the unlabeled data. First, as the inputs of the ViT student are image patches, the feature maps extracted encode crucial class-wise statistics. To this end, we propose class-aware feature consistency distillation (\textbf{CFCD}) that first leverages the outputs of each student as the pseudo labels and generates class-aware feature (CF) maps for knowledge transfer between the two students.  Second, as the ViT student has more uniform representations for all layers, we propose consistency-aware cross distillation (\textbf{CCD}) to transfer knowledge between the pixel-wise predictions from the cohort. We validate the TCC framework on Cityscapes and Pascal VOC 2012 datasets, which outperforms existing SSL methods by a large margin.    
+			<br>
                     <br>
                 </p>
             </div>
@@ -148,7 +160,7 @@
             <h3>
                 Experimental Results
             </h3>
-            <img src="./image/DP19_results.jpg" class="img-responsive" alt="vis_res"  class="center" >
+            <img src="./image/" class="img-responsive" alt="vis_res"  class="center" >
       </div>           
      
     </div>
@@ -164,11 +176,11 @@
                 <div class="row align-items-center">
                     <div class="col py-3">
                         <pre class="border">             
-@inproceedings{Zheng2023DATR,
-  title={Look at the Neighbor: Distortion-aware Unsupervised Domain Adaptation for Panoramic Semantic Segmentati},
-  author={Xu Zheng, Tianbo Pan, Yunhao Luo, Lin Wang},
-  booktitle = {IEEE International Conference on Computer Vision (ICCV)},
-  year={2023}
+@article{zheng2022transformer,
+  title={Transformer-cnn cohort: Semi-supervised semantic segmentation by the best of both students},
+  author={Zheng, Xu and Luo, Yunhao and Wang, Hao and Fu, Chong and Wang, Lin},
+  journal={arXiv preprint arXiv:2209.02178},
+  year={2022}
 }
 </pre>
                     </div>
